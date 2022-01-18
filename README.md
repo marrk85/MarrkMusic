@@ -1,5 +1,5 @@
 <p align="center">
-    <br><b>✨<ᴍᴀʀʀᴋ ᴍᴜꜱɪᴄ✨/</b><br>
+    <br><b>✨ᴍᴀʀʀᴋ ᴍᴜꜱɪᴄ✨</b><br>
 </p>
 <p align="center"><a href="https://t.me/marrkmusic"><img src="https://te.legra.ph/file/71ccfb68739e5ac01b660.jpg"></a></p>
 <p align="center">
@@ -9,7 +9,7 @@
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
     <a href="https://github.com/marrk85/MarrkMusic/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
     <a href="https://github.com/marrk85/MarrkMusic"> <img src="https://img.shields.io/github/repo-size/marrk85/MarrkMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/AnonymousBoy1025/FallenMusic/commits/main"> <img src="https://img.shields.io/github/last-commit/marrk855/MarrkMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/marrk85/MarrkMusic/commits/main"> <img src="https://img.shields.io/github/last-commit/marrk855/MarrkMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/marrk85/MarrkMusic/issues"> <img src="https://img.shields.io/github/issues/marrk85/MarrkMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/marrk855/MarrkMusic/network/members"> <img src="https://img.shields.io/github/forks/marrk85/MarrkMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
     <a href="https://github.com/marrk85/MarrkMusic/network/members"> <img src="https://img.shields.io/github/stars/marrk85/MarrkMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
@@ -67,7 +67,7 @@ pip3 install -U pip
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
 sudo apt-get install -y nodejs
 npm i -g npm
-git clone https://github.com/AnonymousBoy1025/FallenMusic # Clone your repo.
+git clone https://github.com/marrk85/MarrkMusic # Clone your repo.
 cd FallenMusic
 pip3 install -U -r requirements.txt
 cp example.env .env #Use vim to edit ENVs
