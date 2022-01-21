@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                "ʜᴇʏ, ᴛʜɪs ɪs 🖤 ᴍᴀʀʀᴋ ᴍᴜsɪᴄ ʙᴏᴛ 🖤 ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ʙᴀʙʏ.\n\nᴅᴏɴ'ᴛ sᴘᴀᴍ ʜᴇʀᴇ ʙᴀʙʏ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ 😘[ɪʀᴏɴ 🇮🇳 ♡](t.me/marrk85).\n",
+                "ʜᴇʏ, ᴛʜɪs ɪs 🖤 ᴍᴀʀʀᴋ ᴍᴜsɪᴄ ʙᴏᴛ 🖤 ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ʙᴀʙʏ.\n\nᴅᴏɴ'ᴛ sᴘᴀᴍ ʜᴇʀᴇ ʙᴀʙʏ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ 😘[.|ɪʀᴏɴ|🇮🇳|♡|.](t.me/marrk85).\n",
             )
             return
 
