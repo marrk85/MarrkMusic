@@ -25,10 +25,10 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ​", url="https://t.me/Marrk_music_bot?startgroup=true")
+                        "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​", url="https://t.me/Marrk_music_bot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
-                        "ᴄʀᴇᴀᴛᴏʀ", url="https://t.me/marrk85"
+                        "ᴜᴘᴅᴀᴛᴇ'ꜱ", url="https://t.me/marrkchannel"
                     ),
                     InlineKeyboardButton(
                         "sᴜᴘᴘᴏʀᴛ", url="https://t.me/marrkmusic"
@@ -51,7 +51,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💕sᴜᴘᴘᴏʀᴛ💕", url=f"https://t.me/marrkmusic")
+                        "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/marrkmusic")
                 ]
             ]
         ),
