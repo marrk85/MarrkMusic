@@ -35,7 +35,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢ ꜰʀᴏᴍ ꜰᴀʟʟᴇɴ sᴇʀᴠᴇʀ ʙᴀʙʏ​.")
+    m.edit("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢ ꜰʀᴏᴍ ᴍᴀʀʀᴋ sᴇʀᴠᴇʀ ʙᴀʙʏ​.")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
