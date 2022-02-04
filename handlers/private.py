@@ -10,7 +10,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4a9dd75475d940297c6e4.jpg",
+        photo=f"https://te.legra.ph/file/0f0a1d2c1b36bcbda89de.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━
 🖤 ʜᴇʏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
@@ -34,7 +34,7 @@ async def start_(client: Client, message: Message):
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://t.me/marrkmusic"
+                        "🖤ᴀᴀɪɴᴀ ᴄʜᴀɴɴᴇʟ🖤​", url="https://t.me/Aaina_Op"
                     )]
             ]
        ),
@@ -44,7 +44,7 @@ async def start_(client: Client, message: Message):
 
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/7f949ac144ff5d0d7705a.jpg",
+        photo=f"https://te.legra.ph/file/3106344e011c60d0039ab.jpg",
         caption=f"""ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !🖤""",
         reply_markup=InlineKeyboardMarkup(
             [
