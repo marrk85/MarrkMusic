@@ -296,9 +296,9 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="» ᴛʀᴀᴄᴋ ǫᴜᴇᴜᴇᴅ ᴀᴛ {} ʙᴀʙʏ".format(position),
-            reply_markup=keyboard,
-        )
+            caption="» ɴᴀᴍᴇ​ : {}\n\n ᴅᴜʀᴀᴛɪᴏɴ : `{}` ᴍɪɴᴜᴛᴇs\n ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​ : {}\n ᴘʟᴀʏɪɴɢ ɪɴ​ : `{}`\n".format(
+        title, duration, message.from_user.mention(), message.chat.title
+        ), )
     else:
         await callsmusic.pytgcalls.join_group_call(
                 chat_id, 
