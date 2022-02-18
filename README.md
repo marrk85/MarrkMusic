@@ -1,7 +1,7 @@
 <p align="center">
     <br><b> ✨•|♪|ᴍᴀʀʀᴋ ᴍᴜꜱɪᴄ|♪|•✨</b><br>
 </p>
-<p align="center"><a href="https://t.me/DevilsHeavenMF"><img src="https://telegra.ph/file/93b08120e36d096cd21ca.jpg"></a></p>
+<p align="center"><a href="https://t.me/marrkmusic"><img src="https://te.legra.ph/file/a9680a42a4f508ce20c88.jpg"></a></p>
 
 > Marrk Music is a Telegram Bot project that allows you to play music on Telegram through Telegram Voice Chat Feature</b><br>
 
@@ -80,7 +80,7 @@ python3 main.py # Run the bot
 
 ### Special Credits 💖
 - [SUKUNA](https://github.com/marrk85): Developer
-- [Fallen Music Bot](https://telegram.me/Marrk_music_bot): Test Bot
+- [Marrk Music Bot](https://telegram.me/Marrk_music_bot): Test Bot
 
 [![ForTheBadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
