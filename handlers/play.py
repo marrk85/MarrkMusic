@@ -151,11 +151,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
              [
                 [
-                    InlineKeyboardButton(
-                            text="ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/marrk85"),
                         InlineKeyboardButton(
-                            text="ɢʀᴏᴜᴘ",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
@@ -193,11 +190,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                            text="ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/marrk85"),
                         InlineKeyboardButton(
-                            text="ɢʀᴏᴜᴘ",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
@@ -212,11 +206,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                            text="ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/marrk85"),
                         InlineKeyboardButton(
-                            text="ɢʀᴏᴜᴘ",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
@@ -269,11 +260,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                            text="ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/marrk85"),
                         InlineKeyboardButton(
-                            text="ɢʀᴏᴜᴘ",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
