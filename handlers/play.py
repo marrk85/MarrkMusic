@@ -152,7 +152,7 @@ async def play(_, message: Message):
              [
                 [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",
+                            text="♪ sᴜᴘᴘᴏʀᴛ ♪",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
@@ -191,7 +191,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",
+                            text="♪ sᴜᴘᴘᴏʀᴛ ♪",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
@@ -207,7 +207,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",
+                            text="♪ sᴜᴘᴘᴏʀᴛ ♪",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
@@ -227,7 +227,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ🤦🏻‍♂️"
             )
-        await lel.edit("✨")
+        await lel.edit("🖤")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -261,7 +261,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",
+                            text="♪ sᴜᴘᴘᴏʀᴛ ♪",
                             url=f"https://t.me/marrkmusic")
                    
                 ]
