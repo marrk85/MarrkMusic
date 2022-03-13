@@ -16,7 +16,7 @@ async def start_(client: Client, message: Message):
 ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ
 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-✰ᴍᴀɴᴀɢᴇᴅ ʙʏ:- [✰ ɪʀᴏɴ ✰](https://t.me/marrk85)
+✰ ᴍᴀɴᴀɢᴇᴅ ʙʏ:- [✰ ɪʀᴏɴ ✰](https://t.me/marrk85)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖**""",
     reply_markup=InlineKeyboardMarkup(
             [
