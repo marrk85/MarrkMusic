@@ -74,7 +74,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     font2 = ImageFont.truetype("etc/font.ttf", 60)
     draw.text(
         (20, 45),
-        f"Playing on: {}...",
+        f"Powered By: Marrk Player",
         fill="white",
         stroke_width=1,
         stroke_fill="white",
@@ -91,8 +91,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     img.save("final.png")
     os.remove("temp.png")
     os.remove("background.png")
-    final = f"final.png"
-    return final
+
  
 
 @Client.on_message(
