@@ -74,7 +74,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     font2 = ImageFont.truetype("etc/font.ttf", 60)
     draw.text(
         (20, 45),
-        f"Powered By: MARRK BOTS",
+        f"Powered By: MARRK",
         fill="white",
         stroke_width=1,
         stroke_fill="white",
