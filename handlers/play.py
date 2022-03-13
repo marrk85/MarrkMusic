@@ -67,8 +67,8 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
     image6 = image4.convert("RGBA")
-    Image.alpha_composite(image5, image6).save(f"tempforeground.png")
-    img = Image.open(f"tempforeground.png")
+    Image.alpha_composite(image5, image6).save(f"background.png")
+    img = Image.open(f"background.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("theme/font.ttf", 85)
     font2 = ImageFont.truetype("theme/font.ttf", 60)
@@ -88,10 +88,10 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
         stroke_fill="white",
         font=font,
     )
-    img.save(f"foreground.png")
-    os.remove(f"foreground.png")
-    os.remove(f"foreground.png")
-    final = f"foreground.png"
+    img.save(f"background.png")
+    os.remove(f"background.png")
+    os.remove(f"background.png")
+    final = f"background.png"
     return final
 
 
