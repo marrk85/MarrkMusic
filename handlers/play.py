@@ -74,7 +74,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     font2 = ImageFont.truetype("etc/font.ttf", 60)
     draw.text(
         (20, 45),
-        f"Powered By: Marrk Player",
+        f"Playing In: {}",
         fill="white",
         stroke_width=1,
         stroke_fill="white",
@@ -95,7 +95,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
  
 
 @Client.on_message(
-    command(["play"])
+    command(["play", "vplay", "#", "marrkplay", "p"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
