@@ -10,11 +10,14 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/113613aac8806b4d94006.jpg",
-        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━
-🖤 ʜᴇʏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
-ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
-━━━━━━━━━━━━━━━━━━━━━━**""",
+        photo=f"https://te.legra.ph/file/dfb645bbd6b7ea1540f92.jpg",
+        caption=f"""**✰ʜᴇʟʟᴏ... , 
+ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
+ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ
+ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+✰ᴍᴀɴᴀɢᴇᴅ ʙʏ:- [✰ ɪʀᴏɴ ✰](https://t.me/marrk85)
+➖➖➖➖➖➖➖➖➖➖➖➖➖**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -36,7 +39,7 @@ async def start_(client: Client, message: Message):
 
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/113613aac8806b4d94006.jpg",
+        photo=f"https://te.legra.ph/file/dfb645bbd6b7ea1540f92.jpg",
         caption=f"""ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ 🖤""",
         reply_markup=InlineKeyboardMarkup(
             [
