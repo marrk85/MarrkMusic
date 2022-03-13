@@ -70,7 +70,24 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     Image.alpha_composite(image5, image6).save("temp.png")
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("etc/font.otf", 32)
+    font = ImageFont.truetype("etc/font.ttf", 85)
+    font2 = ImageFont.truetype("etc/font.ttf", 60)
+    draw.text(
+        (20, 45),
+        f"Playing on: {ctitle[:14]}...",
+        fill="white",
+        stroke_width=1,
+        stroke_fill="white",
+        font=font2,
+    )
+    draw.text(
+        (25, 595),
+        f"{title[:27]}...",
+        fill="white",
+        stroke_width=2,
+        stroke_fill="white",
+        font=font,
+    )
     img.save("final.png")
     os.remove("temp.png")
     os.remove("background.png")
