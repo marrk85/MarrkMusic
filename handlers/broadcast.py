@@ -7,24 +7,4 @@ from pyrogram.errors import UserAlreadyParticipant
 from callsmusic.callsmusic import client as Marrk
 from config import SUDO_USERS
 
-@Client.on_message(filters.command(["broadcast"]))
-async def broadcast(_, message: Message):
-    sent=0
-    failed=0
-    if message.from_user.id not in SUDO_USERS:
-        return
-    else:
-        wtf = await message.reply("`sᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ​ ʙᴀʙʏ...`")
-        if not message.reply_to_message:
-            await wtf.edit("**__ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ​ ʙᴀʙʏ__**")
-            return
-        lmao = message.reply_to_message.text
-        async for dialog in Marrk.iter_dialogs():
-            try:
-                await Marrk.send_message(dialog.chat.id, lmao)
-                sent = sent+1
-                await wtf.edit(f"`ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ʙᴀʙʏ` \n\n**ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴛᴏ :** `{sent}` ᴄʜᴀᴛs \n**ꜰᴀɪʟᴇᴅ ɪɴ​:** {failed} ᴄʜᴀᴛs")
-                await asyncio.sleep(3)
-            except:
-                failed=failed+1
-        await message.reply_text(f"`ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ` \n\n**ʙʀᴏᴀᴅᴄᴀsᴛ ᴛᴏ :** `{sent}` ᴄʜᴀᴛs \n**ꜰᴀɪʟᴇᴅ ɪɴ​:** {failed} ᴄʜᴀᴛs")
+@app.on_message(filters.command("broadcast") & filters.user(SUDOERS))async def broadcast_message(_, message): if not message.reply_to_message: pass else : x = message.reply_to_message.message_id y = message.chat.id sent = 0 pin = 0 chats = [] schats = await get_served_chats() for chat in schats: chats.append(int(chat["chat_id"])) for i in chats: try: m = await app.forward_messages(i, y, x) try: await m.pin(disable_notification=False) pin += 1 except Exception: pass await asyncio.sleep(.3) sent += 1 except Exception: pass await message.reply_text(f"sᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ {sent} ᴄʜᴀᴛs ᴡɪᴛʜ {pin} ᴘɪɴs ʙᴀʙʏ.") return if len(message.command) < 2: await message.reply_text("Usage:\n/broadcast [MESSAGE]") return text = message.text.split(None, 1)[1] sent = 0 pin = 0 chats = [] schats = await get_served_chats() for chat in schats: chats.append(int(chat["chat_id"])) for i in chats: try: m = await app.send_message(i, text=text) try: await m.pin(disable_notification=False) pin += 1 except Exception: pass await asyncio.sleep(.3) sent += 1 except Exception: pass await message.reply_text(f"sᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ ɪɴ {sent} ᴄʜᴀᴛs ᴡɪᴛʜ {pin} ᴘɪɴs ʙᴀʙʏ.")
