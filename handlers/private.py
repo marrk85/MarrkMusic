@@ -12,12 +12,10 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/dfb645bbd6b7ea1540f92.jpg",
         caption=f"""✰ʜᴇʟʟᴏ... , 
-ᴍʏ ɴᴀᴍᴇ ɪs 𝙈𝘼𝙍𝙍𝙆 ✘ 𝙈𝙐𝙎𝙄𝘾.
+ᴍʏ ɴᴀᴍᴇ NIKKU MUSIC BOT.
 ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ
 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-✰ ᴍᴀɴᴀɢᴇᴅ ʙʏ:- [✰ ɪʀᴏɴ ✰](https://t.me/marrk85)
-➖➖➖➖➖➖➖➖➖➖➖➖➖""",
+""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
