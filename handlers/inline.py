@@ -36,6 +36,7 @@ async def inline(client: Client, query: InlineQuery):
                     thumb_url=result["thumbnails"][0]["url"]
                 )
             )
+
         try:
             await query.answer(
                 results=answers,
