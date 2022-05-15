@@ -10,9 +10,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/dfb645bbd6b7ea1540f92.jpg",
-        caption=f"""✰ʜᴇʟʟᴏ... , 
-ᴍʏ ɴᴀᴍᴇ 𝙈𝘼𝙍𝙍𝙆 ✘ 𝙈𝙐𝙎𝙄𝘾.
+        photo=f"{START_IMG}",
+        caption=f"""✰ʜᴇʟʟᴏ... {message.from_user.mention()} , 
+ᴍʏ ɴᴀᴍᴇ [{bn}](t.me/{bu}) .
 ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ
 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /
 """,
@@ -20,31 +20,18 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "♪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ♪", url="https://t.me/Lalalisa_RoBot?startgroup=true")
+                        "♪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ♪", url=f"https://t.me/{bu}?startgroup=true"
                   ],[
                     InlineKeyboardButton(
-                        "♪ ᴜᴘᴅᴀᴛᴇ'ꜱ ♪", url="https://t.me/marrkchannel"
+                        "♪ ᴏᴡɴᴇʀ ♪", url=f"https://t.me/{me}"
                     ),
                     InlineKeyboardButton(
-                        "♪ sᴜᴘᴘᴏʀᴛ ♪", url="https://t.me/marrkmusic"
+                        "♪ sᴜᴘᴘᴏʀᴛ ♪", url=f"https://t.me/{SUPPORT_GROUP}"
                     )
-                ],
-            ]
-       ),
-    )
-
-@Client.on_message(command(["ping"]) & filters.group & ~filters.edited & ~filters.private)
-
-async def help(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://te.legra.ph/file/dfb645bbd6b7ea1540f92.jpg",
-        caption=f"""ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ 🖤""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
+                  ],[
                     InlineKeyboardButton(
-                        "♪ sᴜᴘᴘᴏʀᴛ ♪", url=f"https://t.me/marrkmusic")
+                        "♪ Mᴀʀᴠᴇʟᴏᴜs ✨🤍 ♪", url=f"https://t.me/love_world135")
                 ]
             ]
-        ),
+       ),
     )
