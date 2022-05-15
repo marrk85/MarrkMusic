@@ -1,7 +1,8 @@
 {
-  "name": "Marrk Music",
-  "description": "A SuperFast VC Player bot to play songs in Telegram Voice Chat. Powered by PyTgCalls.",
-  "keywords": ["music", "voicechat", "telegram"],
+  "name": "ғᴀʟʟᴇɴ ᴍᴜsɪᴄ",
+  "logo": "https://te.legra.ph/file/6158126d9096b96f4278d.jpg",
+  "description": "A SuperFast VC Player bot to play songs in Telegram Video Chat. Powered by PyTgCalls.",
+  "keywords": ["music", "voicechat", "telegram", "fallen"],
   "repository": "https://github.com/marrk85/MarrkMusic",
   "stack": "container",
   "env": {
@@ -15,26 +16,54 @@
     },
     "BOT_NAME": {
       "description": "A name for your MusicPlayer Bot",
-      "required": true,
+      "required": false,
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Username of your bot without @",
+      "required": false,
       "value": ""
     },
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps",
-      "required": true
+      "required": false
     },
     "API_HASH": {
       "description": "Get this value from from my.telegram.org/apps",
-      "required": true
+      "required": false
+    },
+    "OWNER_USERNAME": {
+      "description": "Username of the person who will known as owner of the bot, without @",
+      "required": false,
+      "value": "marrk85"
+    },
+    "SUPPORT_GROUP": {
+      "description": "Username of the group where users will go and disturb you, without @",
+      "required": false,
+      "value": "marrkmusic"
     },
     "SUDO_USERS": {
       "description": "User IDs of the users who will counted as admin everywhere (if more than one separate them by space).",
       "required": true,
       "value": "2030475041"
     },
+    "START_IMG": {
+      "description": "Telegraph link of the pic which you want to set as the start pic of your bot",
+      "required": false
+    },
+    "PING_IMG": {
+      "description": "Telegraph link of the pic which you want to set as the ping pic of your bot",
+      "required": false
+    },
+    "PMPERMIT": {
+      "description": "If you want to notify users who pm to assistant account that it's the assistant account of your bot so don't spam messages there (ENABLE/DISABLE).",
+      "required": false,
+      "value": "ENABLE"
+    },
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes).",
-      "required": true,
-      "value": "15"
+      "required": false,
+      "value": "90"
     }
   }
 }
